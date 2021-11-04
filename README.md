@@ -7,7 +7,7 @@ I prepared this project while learning the Unity game engine. I decided to post 
 
 C# , Unity game engine is used.
 
-# Features
+## Features
 
 - Variables, methods etc. all Turkish. (I know it's not universal. But since I wrote my first project to learn the game engine, I chose to write it in my own language. I plan to write my future projects in English)
 - The entire project is open to access.
@@ -17,6 +17,6 @@ C# , Unity game engine is used.
 
 ![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-0.gif)
 
-# all Levels
+### ALL Levels
 
 ![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/levels.png)
