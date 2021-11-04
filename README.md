@@ -24,3 +24,12 @@ C# , Unity game engine is used.
 ![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/levels.png)
 
 >Version 1.0
+
+#### Developer team
+Göktuğ Yamak - Coding
+Kerem Öter - Moral Support
+Can Karakavak - SFX & Music
+Enes Bora Çoban - 2D Art
+Semih Çağatay - Team Management
+
+>These names contributed to the production of MAYIN V1. The team has changed in later versions .
