@@ -1401,7 +1401,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1475,6 +1475,8 @@ MonoBehaviour:
   bombaSayaciTEXT: 
   YoketBIR:
   - {fileID: 0}
+  YoketIKI: []
+  YoketUC: []
   buraKacinciSeviye: 1
 --- !u!212 &685898531
 SpriteRenderer:

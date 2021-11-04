@@ -93,6 +93,8 @@ public class KarakterKontrolcusu : MonoBehaviour
     }
     public void OnTriggerExit2D(Collider2D uzerindekiBLOKcikis) //2D collider bulunan için 
     { 
+        bombaSayaciTEXT = "0";
+        bombaSayaci.text = bombaSayaciTEXT;
         /*
         switch (uzerindekiBLOKcikis.tag)
         {
