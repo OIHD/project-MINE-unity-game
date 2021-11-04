@@ -21,6 +21,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     public GameObject[] YoketBIR;
     public GameObject[] YoketIKI;
     public GameObject[] YoketUC;
+    public GameObject[] UIsayilar;
     public SceneManager SonrakiSeviye;
     public int buraKacinciSeviye;
 
@@ -41,6 +42,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         gidilecekNokta.parent = null; 
         KarakterYasiyor = true ;
         Degiseceklevel = SceneManager.GetActiveScene();
+        UITemizle(0);
     }
 
     public void OnTriggerEnter2D(Collider2D uzerindekiBLOK) //2D collider bulunan için 
@@ -58,14 +60,17 @@ public class KarakterKontrolcusu : MonoBehaviour
             case "bombaUyarici":
                     bombaSayaciTEXT = "1";
                     bombaSayaci.text = bombaSayaciTEXT;
+                    UITemizle(1);
                 break;
             case "bombaUyarici2":
                     bombaSayaciTEXT = "2";
                     bombaSayaci.text = bombaSayaciTEXT;
+                    UITemizle(2);
                 break;
             case "bombaUyarici3":
                     bombaSayaciTEXT = "3";
                     bombaSayaci.text = bombaSayaciTEXT;
+                    UITemizle(3);
                 break;
             case "buttonZemin":
             for (var i = 0 ; i < YoketBIR.Length ; i++)
@@ -88,6 +93,7 @@ public class KarakterKontrolcusu : MonoBehaviour
             default:
             bombaSayaciTEXT = "0";
             bombaSayaci.text = bombaSayaciTEXT;
+            UITemizle(0);
                 break;
         }  
     }
@@ -95,25 +101,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     { 
         bombaSayaciTEXT = "0";
         bombaSayaci.text = bombaSayaciTEXT;
-        /*
-        switch (uzerindekiBLOKcikis.tag)
-        {
-            case "bombaUyarici":
-                    bombaSayaciTEXT = "0";
-                    bombaSayaci.text = bombaSayaciTEXT;
-                break;
-            case "bombaUyarici2":
-                    bombaSayaciTEXT = "0";
-                    bombaSayaci.text = bombaSayaciTEXT;
-                break;
-            case "bombaUyarici3":
-                    bombaSayaciTEXT = "0";
-                    bombaSayaci.text = bombaSayaciTEXT;
-                break;
-            default:
-                break;
-        }
-        */
+        UITemizle(0);
     }
 
  public void KarakterYolCiz ()
@@ -131,8 +119,18 @@ public class KarakterKontrolcusu : MonoBehaviour
         }
     }
 
+    public void UITemizle(int i)
+    {
+    UIsayilar[0].SetActive(false);
+    UIsayilar[1].SetActive(false);
+    UIsayilar[2].SetActive(false);
+    UIsayilar[3].SetActive(false);
+    UIsayilar[i].SetActive(true);
+    }
+
     private void Update()
     {
+
         if (KarakterYasiyor == true)
         {
             hareketET();
