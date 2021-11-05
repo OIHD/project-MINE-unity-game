@@ -1755,17 +1755,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   Karakter: {fileID: 685898533}
-  bombaSayaci: {fileID: 0}
+  bombaSayaci: {fileID: 1160123332}
   bombaSayaciTEXT: 
   YoketBIR:
   - {fileID: 0}
   YoketIKI: []
   YoketUC: []
   UIsayilar:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 199467622}
+  - {fileID: 453620502}
+  - {fileID: 1902376887}
+  - {fileID: 1524848953}
   buraKacinciSeviye: 1
 --- !u!212 &685898531
 SpriteRenderer:

@@ -4797,10 +4797,10 @@ MonoBehaviour:
   - {fileID: 681796821}
   YoketUC: []
   UIsayilar:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1541942349}
+  - {fileID: 1275289068}
+  - {fileID: 204001302}
+  - {fileID: 666432680}
   buraKacinciSeviye: 4
 --- !u!212 &1617466065
 SpriteRenderer:
