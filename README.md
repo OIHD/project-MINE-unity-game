@@ -31,5 +31,6 @@ C# , Unity game engine is used.
 - Can Karakavak - SFX & Music
 - Enes Bora Çoban - 2D Art
 - Semih Çağatay - Team Management
+- Kıvanç Yücel - Game Design
 
 >These names contributed to the production of MAYIN V1. The team has changed in later versions .
