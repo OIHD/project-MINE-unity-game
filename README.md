@@ -15,7 +15,7 @@ C# , Unity game engine is used.
 
 # Prewiev
 
-![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-0.gif)
+![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-1.gif)
 
 >Version 1.0
 
