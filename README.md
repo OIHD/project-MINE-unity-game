@@ -15,15 +15,15 @@ C# , Unity game engine is used.
 
 # Prewiev
 
-![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-0.gif)
+![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-1.gif)
 
->Version 1.0
+>Version 1.1
 
 ### ALL Levels
 
 ![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/levels.png)
 
->Version 1.0
+>Version 1.1
 
 #### Developer team
 - Göktuğ Yamak - Coding
@@ -31,5 +31,6 @@ C# , Unity game engine is used.
 - Can Karakavak - SFX & Music
 - Enes Bora Çoban - 2D Art
 - Semih Çağatay - Team Management
+- Kıvanç Yücel - Game Design
 
->These names contributed to the production of MAYIN V1. The team has changed in later versions .
+>These names contributed to the production of MAYIN V1 The team has changed in later versions .
