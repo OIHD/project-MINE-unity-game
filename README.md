@@ -5,9 +5,11 @@ A game inspired by minesweeper game.
 
 I prepared this project while learning the Unity game engine. I decided to post all the source code of the first project here. Beginners like me can review the entire project. You can develop and make your own game.
 
+## Used
+
 C# , Unity game engine is used.
 
-#####Platforms
+###Platforms
 > PC , WEB (Android & IOS )
 
 ## Features
