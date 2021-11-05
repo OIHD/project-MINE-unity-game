@@ -7,6 +7,9 @@ I prepared this project while learning the Unity game engine. I decided to post 
 
 C# , Unity game engine is used.
 
+#####Platforms
+> PC , WEB (Android & IOS )
+
 ## Features
 
 - Variables, methods etc. all Turkish. (I know it's not universal. But since I wrote my first project to learn the game engine, I chose to write it in my own language. I plan to write my future projects in English)
@@ -15,7 +18,7 @@ C# , Unity game engine is used.
 
 # Prewiev
 
-![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-1.gif)
+![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-0-7.gif)
 
 >Version 1.1
 
