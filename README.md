@@ -7,7 +7,7 @@ I prepared this project while learning the Unity game engine. I decided to post 
 
 C# , Unity game engine is used.
 
-##Platforms
+## Platforms
 > PC , WEB (Android & IOS )
 
 ## Features
