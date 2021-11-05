@@ -24,6 +24,9 @@ public class KarakterKontrolcusu : MonoBehaviour
     public GameObject[] UIsayilar;
     public SceneManager SonrakiSeviye;
     public int buraKacinciSeviye;
+    public Transform karakterKONUM;
+    public int Xyaz;
+    public int Yyaz;
 
     public void KONSOLAYAZDIR(String BurayaMetinGelecek = "METIN GIRINIZ."){Debug.Log(BurayaMetinGelecek);}
 
@@ -32,12 +35,43 @@ public class KarakterKontrolcusu : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, gidilecekNokta.position, yurumeHizi * Time.deltaTime);
     }
 
+    public void DokunmaALGILA()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            Vector3 DokunmaYERI = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if(DokunmaYERI.x >= 1 && Math.Abs(DokunmaYERI.x) > Math.Abs(DokunmaYERI.y))
+            {
+                Xyaz = 1 ;
+                Yyaz = 0 ;
+                
+            }
+            else if (DokunmaYERI.x <= -1 && Math.Abs(DokunmaYERI.x) > Math.Abs(DokunmaYERI.y))
+            {
+                Xyaz = -1 ;
+                Yyaz = 0 ;
+            }
+            else if (DokunmaYERI.y >= 1 && Math.Abs(DokunmaYERI.y) > Math.Abs(DokunmaYERI.x))
+            {
+                Xyaz = 0 ;
+                Yyaz = 1 ;
+            }
+            else if (DokunmaYERI.y <= -1 && Math.Abs(DokunmaYERI.y) > Math.Abs(DokunmaYERI.x))
+            {
+                Xyaz = 0 ;
+                Yyaz = -1 ;
+            }
+        }
+    }
+
     public void KarakterRenderSwitch ()
     {
             KarakterRender.enabled = false ;
     }
     void Start()
     {
+        Xyaz = 0 ;
+        Yyaz = 0 ;
         KarakterRender = gameObject.GetComponent<SpriteRenderer>();
         gidilecekNokta.parent = null; 
         KarakterYasiyor = true ;
@@ -119,6 +153,21 @@ public class KarakterKontrolcusu : MonoBehaviour
         }
     }
 
+     public void KarakterYolCizMOBIL ()
+    {
+            if (Vector3.Distance(transform.position, gidilecekNokta.position) <= .05f)
+        {
+            if ((Math.Abs(Xyaz) == 1f ) && !Physics2D.OverlapCircle(gidilecekNokta.position + new Vector3(Xyaz, 0f, 0f), .2f, NeBeniDurduracak))
+            {
+                    StartCoroutine(MXgecikme()); //HAREKET X
+            }
+            else if ((Math.Abs(Yyaz) == 1f) && (!Physics2D.OverlapCircle(gidilecekNokta.position + new Vector3(0f, Yyaz, 0f), .2f, NeBeniDurduracak)))
+            {
+                    StartCoroutine(MYgecikme()); //HAREKET Y
+            }
+        }
+    }
+
     public void UITemizle(int i)
     {
     UIsayilar[0].SetActive(false);
@@ -133,7 +182,9 @@ public class KarakterKontrolcusu : MonoBehaviour
 
         if (KarakterYasiyor == true)
         {
+            DokunmaALGILA();
             hareketET();
+            KarakterYolCizMOBIL();
             KarakterYolCiz();
         }
     }
@@ -162,6 +213,30 @@ public class KarakterKontrolcusu : MonoBehaviour
         }
     }
 
+        IEnumerator MXgecikme()
+    {
+        if (deaktif == false)
+        {
+            deaktif = true;
+            MVEKTORdegistir("Horizontal","Xhareket");
+            yield return new WaitForSeconds(1);
+            idlehareketinegec ();
+            deaktif = false;
+        }
+    }
+
+    IEnumerator MYgecikme()
+    {
+        if (deaktif == false)
+        {
+            deaktif = true;
+            MVEKTORdegistir("Vertical","Yhareket");
+            yield return new WaitForSeconds(1);
+            idlehareketinegec ();
+            deaktif = false;
+        }
+    }
+
     IEnumerator Ogecikme()
     {
            // KONSOLAYAZDIR("GEBERDIN")
@@ -178,6 +253,8 @@ public class KarakterKontrolcusu : MonoBehaviour
     {
             Karakter.SetFloat("Xhareket", 0);
             Karakter.SetFloat("Yhareket", 0);
+            Xyaz = 0;
+            Yyaz = 0;
     }
 
     public void VEKTORdegistir (string YonBELIRT , string HareketBELIRT)
@@ -195,6 +272,27 @@ public class KarakterKontrolcusu : MonoBehaviour
                     break;
             }
             Karakter.SetFloat(HareketBELIRT, Input.GetAxisRaw(YonBELIRT));
+    }
+
+    public void MVEKTORdegistir (string YonBELIRT , string HareketBELIRT)
+    {
+        int geciciyon = 0 ; 
+        
+            //KONSOLAYAZDIR(HareketBELIRT + "ekseninde hareket edildi");
+            switch (YonBELIRT)
+            {
+                case "Vertical":
+            geciciyon = Yyaz;
+            gidilecekNokta.position += new Vector3(0f, Yyaz, 0f);
+                    break;
+                case "Horizontal":
+            geciciyon = Xyaz ;
+            gidilecekNokta.position += new Vector3(Xyaz, 0f, 0f);
+                    break;
+                default:
+                    break;
+            }
+            Karakter.SetFloat(HareketBELIRT, geciciyon);
     }
 
     public static int distanceCount(int bombDistanceCount){  
