@@ -17,13 +17,13 @@ C# , Unity game engine is used.
 
 ![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-1.gif)
 
->Version 1.0
+>Version 1.1
 
 ### ALL Levels
 
 ![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/levels.png)
 
->Version 1.0
+>Version 1.1
 
 #### Developer team
 - Göktuğ Yamak - Coding
