@@ -20,7 +20,7 @@ C# , Unity game engine is used.
 
 ![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-0-7.gif)
 
->Version 1.1
+>Version 1.0.x
 
 #### Developer team
 - Göktuğ Yamak - Coding
