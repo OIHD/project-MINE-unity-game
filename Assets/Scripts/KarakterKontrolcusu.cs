@@ -27,6 +27,10 @@ public class KarakterKontrolcusu : MonoBehaviour
     public Transform karakterKONUM;
     public int Xyaz;
     public int Yyaz;
+    public AudioSource yurumeSES;
+    public AudioSource olmeSES;
+    //public AudioSource KazanmaSES;
+
 
     public void KONSOLAYAZDIR(String BurayaMetinGelecek = "METIN GIRINIZ."){Debug.Log(BurayaMetinGelecek);}
 
@@ -79,11 +83,17 @@ public class KarakterKontrolcusu : MonoBehaviour
         UITemizle(0);
     }
 
+    void YurumeSESoynat()
+    {
+        yurumeSES.Play();
+    }
+
     public void OnTriggerEnter2D(Collider2D uzerindekiBLOK) //2D collider bulunan için 
     { 
         switch (uzerindekiBLOK.tag)
         {
             case "Finish":
+            //KazanmaSES.Play();
             string SonrakiSeviye = "bolum"+((buraKacinciSeviye+1).ToString()) ;
                     SceneManager.LoadScene(SonrakiSeviye.ToString());
                 break;
@@ -241,6 +251,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     {
            // KONSOLAYAZDIR("GEBERDIN")
             deaktif = true;
+            olmeSES.Play();
             Karakter.SetBool("Geberdi", true);
             idlehareketinegec ();
             yield return new WaitForSeconds(1);
