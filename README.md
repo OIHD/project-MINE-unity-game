@@ -22,12 +22,6 @@ C# , Unity game engine is used.
 
 >Version 1.1
 
-### ALL Levels
-
-![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/levels.png)
-
->Version 1.1
-
 #### Developer team
 - Göktuğ Yamak - Coding
 - Kerem Öter - Moral Support
