@@ -14,7 +14,7 @@ C# , Unity game engine is used.
 
 - Variables, methods etc. all Turkish. (I know it's not universal. But since I wrote my first project to learn the game engine, I chose to write it in my own language. I plan to write my future projects in English)
 - The entire project is open to access.
-- It's free and open source ^^.
+- It's a demo but free and open source ^^.
 
 # Prewiev
 
