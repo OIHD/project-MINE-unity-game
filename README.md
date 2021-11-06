@@ -1,7 +1,7 @@
 # project-MAYIN-unity-game
 A game inspired by minesweeper game.
 
-![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/SPLASH.png)
+![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/SPLASH300.png)
 
 ### Free UNITY project
 
