@@ -1,6 +1,8 @@
 # project-MAYIN-unity-game
 A game inspired by minesweeper game.
 
+![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/SPLASH.png)
+
 ### Free UNITY project
 
 I prepared this project while learning the Unity game engine. I decided to post all the source code of the first project here. Beginners like me can review the entire project. You can develop and make your own game.
