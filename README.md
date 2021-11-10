@@ -25,11 +25,12 @@ C# , Unity game engine is used.
 >Version 1.0.x
 
 #### Developer team
-- Göktuğ Yamak - Coding
-- Kerem Öter - Moral Support
+- Göktuğ Yamak - Coding , Etc.
 - Can Karakavak - SFX & Music
-- Enes Bora Çoban - 2D Art
-- Semih Çağatay - Team Management
+- Enes Bora Çoban - Pixel Art
+- Semih Çağatay - Assembles The Team
 - Kıvanç Yücel - Game Design
+- Alperen Güner - Game Design
+- Kerem Öter - Nothing , Moral Support
 
 >These names contributed to the production of MAYIN V1 ( 5 level demo ) The team has changed in later versions .
