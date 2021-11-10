@@ -32,5 +32,3 @@ C# , Unity game engine is used.
 - Kıvanç Yücel - Game Design
 - Alperen Güner - Game Design
 - Kerem Öter - Nothing , Moral Support
-
->These names contributed to the production of MAYIN V1 ( 5 level demo ) The team has changed in later versions .
