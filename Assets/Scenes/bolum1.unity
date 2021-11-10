@@ -2010,6 +2010,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   Karakter: {fileID: 685898533}
+  Dron: {fileID: 2079496971}
   bombaSayaci: {fileID: 1160123332}
   bombaSayaciTEXT: 
   YoketBIR: []

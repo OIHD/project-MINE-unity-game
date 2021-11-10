@@ -11,6 +11,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     public LayerMask NeBeniDurduracak;
     public LayerMask NeBeniGebertecek;
     public Animator Karakter;   
+    public Animator Dron;
     private bool deaktif = false ;
     private SpriteRenderer KarakterRender ;
     private bool KarakterYasiyor ;
@@ -104,16 +105,19 @@ public class KarakterKontrolcusu : MonoBehaviour
             case "bombaUyarici":
                     bombaSayaciTEXT = "1";
                     bombaSayaci.text = bombaSayaciTEXT;
+                    Dron.SetBool("dronr", true);
                     UITemizle(1);
                 break;
             case "bombaUyarici2":
                     bombaSayaciTEXT = "2";
                     bombaSayaci.text = bombaSayaciTEXT;
+                    Dron.SetBool("dronr", true);
                     UITemizle(2);
                 break;
             case "bombaUyarici3":
                     bombaSayaciTEXT = "3";
                     bombaSayaci.text = bombaSayaciTEXT;
+                    Dron.SetBool("dronr", true);
                     UITemizle(3);
                 break;
             case "buttonZemin":
@@ -137,6 +141,7 @@ public class KarakterKontrolcusu : MonoBehaviour
             default:
             bombaSayaciTEXT = "0";
             bombaSayaci.text = bombaSayaciTEXT;
+            Dron.SetBool("dronr", false);
             UITemizle(0);
                 break;
         }  

@@ -4825,6 +4825,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   Karakter: {fileID: 1903377209}
+  Dron: {fileID: 1994715258}
   bombaSayaci: {fileID: 438019714}
   bombaSayaciTEXT: deneme
   YoketBIR:
