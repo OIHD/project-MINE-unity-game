@@ -150,6 +150,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     { 
         bombaSayaciTEXT = "0";
         bombaSayaci.text = bombaSayaciTEXT;
+        Dron.SetBool("dronr", false);
         UITemizle(0);
     }
 
