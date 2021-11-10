@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class KarakterKontrolcusu : MonoBehaviour
 {
-    private float yurumeHizi = 1f ;
+    private float yurumeHizi = 4f ;
     public Transform gidilecekNokta;
     public LayerMask NeBeniDurduracak;
     public LayerMask NeBeniGebertecek;
@@ -205,7 +205,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         {
             deaktif = true;
             VEKTORdegistir("Horizontal","Xhareket");
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.25f);
             idlehareketinegec ();
             deaktif = false;
         }
@@ -217,7 +217,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         {
             deaktif = true;
             VEKTORdegistir("Vertical","Yhareket");
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.25f);
             idlehareketinegec ();
             deaktif = false;
         }
@@ -229,7 +229,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         {
             deaktif = true;
             MVEKTORdegistir("Horizontal","Xhareket");
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.25f);
             idlehareketinegec ();
             deaktif = false;
         }
@@ -241,7 +241,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         {
             deaktif = true;
             MVEKTORdegistir("Vertical","Yhareket");
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.25f);
             idlehareketinegec ();
             deaktif = false;
         }
