@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro ; 
 
 public class KarakterKontrolcusu : MonoBehaviour
 {
@@ -34,13 +35,35 @@ public class KarakterKontrolcusu : MonoBehaviour
     public int bombaADET;
     public bool bombaHACK;
     public int bombaHACKoncesi;
-
+    //
+    public TextMeshProUGUI Metin ;
+    public string[] satirlar ;
+    public float MetinYAZMAHIZI;
+    public int MetinINDEX;
+    public SpriteRenderer[] OgreticiRENDER;
 
     public void KONSOLAYAZDIR(String BurayaMetinGelecek = "METIN GIRINIZ."){Debug.Log(BurayaMetinGelecek);}
 
     public void hareketET()
     {
         transform.position = Vector3.MoveTowards(transform.position, gidilecekNokta.position, yurumeHizi * Time.deltaTime);
+    }
+
+    public void DiyalogBASLAT()
+    {
+        MetinINDEX = 0;
+        StartCoroutine(MetinYAZ());
+
+    }
+
+    IEnumerator MetinYAZ()
+    {
+        foreach (char harf in satirlar[MetinINDEX].ToCharArray())
+        {
+            Metin.text += harf ;
+            yield return new WaitForSeconds(MetinYAZMAHIZI);
+        }
+                        KarakterYasiyor = true ;
     }
 
     public void DokunmaALGILA()
@@ -78,6 +101,10 @@ public class KarakterKontrolcusu : MonoBehaviour
     }
     void Start()
     {
+        OgreticiRENDER[0].enabled = false;
+        OgreticiRENDER[1].enabled = false;
+        OgreticiRENDER[2].enabled = false;
+        Metin.text = string.Empty;
         bombaADET = 0 ;
         Xyaz = 0 ;
         Yyaz = 0 ;
@@ -158,6 +185,16 @@ public class KarakterKontrolcusu : MonoBehaviour
             {
                     Destroy(YoketUC[i]);
             }
+                break;
+            case "ogretici":
+                KarakterYasiyor = false ;
+                DiyalogBASLAT();
+                OgreticiRENDER[0].enabled = true;
+                OgreticiRENDER[1].enabled = true;
+                OgreticiRENDER[2].enabled = true;
+                break;
+            case "ogreticireset":
+                Metin.text = string.Empty;
                 break;
             default:
                 break;
