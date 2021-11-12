@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18448280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -5, z: 6.15}
+  m_LocalPosition: {x: -2.14, y: -2.41, z: 6.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 925932907}
@@ -849,7 +849,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7e6c36b13f9a64dbea659b93a1c6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gidilecekNokta: {fileID: 435191054}
+  buraKacinciSeviye: 4
+  MetinINDEX: 0
+  Xyaz: 0
+  Yyaz: 0
+  bombaADET: 0
+  bombaHACKoncesi: 0
+  MetinYAZMAHIZI: 0
   NeBeniDurduracak:
     serializedVersion: 2
     m_Bits: 64
@@ -858,6 +864,10 @@ MonoBehaviour:
     m_Bits: 128
   Karakter: {fileID: 211789464}
   Dron: {fileID: 81120126}
+  KarakterYasiyor: 0
+  bombaHACK: 0
+  Degiseceklevel:
+    m_Handle: 0
   bombaSayaci: {fileID: 1849118477}
   bombaSayaciTEXT: deneme
   YoketBIR:
@@ -875,19 +885,12 @@ MonoBehaviour:
   - {fileID: 1335786079}
   - {fileID: 1335786079}
   - {fileID: 335276626}
-  buraKacinciSeviye: 4
   karakterKONUM: {fileID: 0}
-  Xyaz: 0
-  Yyaz: 0
+  gidilecekNokta: {fileID: 435191054}
   yurumeSES: {fileID: 464484985}
   olmeSES: {fileID: 1170239188}
-  bombaADET: 0
-  bombaHACK: 0
-  bombaHACKoncesi: 0
   Metin: {fileID: 628126366}
   satirlar: []
-  MetinYAZMAHIZI: 0
-  MetinINDEX: 0
   OgreticiRENDER:
   - {fileID: 56231114}
   - {fileID: 56231114}
@@ -3549,7 +3552,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 8.36
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3573,7 +3576,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925932904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 5.09, z: -10}
+  m_LocalPosition: {x: 2, y: 2.57, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 18448281}

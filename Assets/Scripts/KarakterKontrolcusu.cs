@@ -50,9 +50,6 @@ public class KarakterKontrolcusu : MonoBehaviour
             yield return new WaitForSeconds(MetinYAZMAHIZI);
         }
                         KarakterYasiyor = true ;
-                OgreticiRENDER[0].enabled = true;
-                OgreticiRENDER[1].enabled = true;
-                OgreticiRENDER[2].enabled = true;
     }
 
     public void DokunmaALGILA()
@@ -177,6 +174,9 @@ public class KarakterKontrolcusu : MonoBehaviour
                 break;
             case "ogretici":
                 KarakterYasiyor = false ;
+                OgreticiRENDER[0].enabled = true;
+                OgreticiRENDER[1].enabled = true;
+                OgreticiRENDER[2].enabled = true;
                 DiyalogBASLAT();
                 break;
             case "ogreticireset":
