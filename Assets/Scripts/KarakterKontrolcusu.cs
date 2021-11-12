@@ -33,6 +33,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     //public AudioSource KazanmaSES;
     public int bombaADET;
     public bool bombaHACK;
+    public int bombaHACKoncesi;
 
 
     public void KONSOLAYAZDIR(String BurayaMetinGelecek = "METIN GIRINIZ."){Debug.Log(BurayaMetinGelecek);}
@@ -126,9 +127,14 @@ public class KarakterKontrolcusu : MonoBehaviour
                     UITemizle(bombaADET);
                     }
             }
+                    else if (bombaHACK == true)
+            {
+                bombaADET = bombaADET + 1 ;
+            }
                 break;
             case "bombaUyariciHACK":
                 bombaHACK = true ;
+                bombaHACKoncesi = bombaADET ;
                 UIsayilar[0].SetActive(false);
                 UIsayilar[1].SetActive(false);
                 UIsayilar[2].SetActive(false);
@@ -164,10 +170,7 @@ public class KarakterKontrolcusu : MonoBehaviour
             case "bombaUyarici":
             if (bombaHACK == false)
             {
-                if (bombaADET != 0)
-                {
                 bombaADET = bombaADET - 1 ;
-                }
             bombaSayaciTEXT = Convert.ToString(bombaADET) ;
             bombaSayaci.text = bombaSayaciTEXT;
                 if (bombaADET == 0)
@@ -179,6 +182,10 @@ public class KarakterKontrolcusu : MonoBehaviour
                     Dron.SetBool("dronr", true);
                 }
             UITemizle(bombaADET);
+            }
+            else if (bombaHACK == true)
+            {
+                bombaADET = bombaADET - 1;
             }
             break;
             case "bombaUyariciHACK":
