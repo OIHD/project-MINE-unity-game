@@ -32,6 +32,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     public AudioSource olmeSES;
     //public AudioSource KazanmaSES;
     public int bombaADET;
+    public bool bombaHACK;
 
 
     public void KONSOLAYAZDIR(String BurayaMetinGelecek = "METIN GIRINIZ."){Debug.Log(BurayaMetinGelecek);}
@@ -84,6 +85,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         KarakterYasiyor = true ;
         Degiseceklevel = SceneManager.GetActiveScene();
         UITemizle(0);
+        UIsayilar[9].SetActive(false);
     }
 
     void YurumeSESoynat()
@@ -105,6 +107,8 @@ public class KarakterKontrolcusu : MonoBehaviour
                     KarakterYasiyor = false ;
                 break;
             case "bombaUyarici":
+            if (bombaHACK == false)
+            {
                 bombaADET = bombaADET + 1 ;
                 bombaSayaciTEXT = Convert.ToString(bombaADET) ;
                 bombaSayaci.text = bombaSayaciTEXT;
@@ -116,7 +120,20 @@ public class KarakterKontrolcusu : MonoBehaviour
                     {
                         Dron.SetBool("dronr", true);
                     }
-                UITemizle(bombaADET);
+
+                    if (bombaHACK == false)
+                    {
+                    UITemizle(bombaADET);
+                    }
+            }
+                break;
+            case "bombaUyariciHACK":
+                bombaHACK = true ;
+                UIsayilar[0].SetActive(false);
+                UIsayilar[1].SetActive(false);
+                UIsayilar[2].SetActive(false);
+                UIsayilar[3].SetActive(false);
+                UIsayilar[9].SetActive(true);
                 break;
             case "buttonZemin":
             for (var i = 0 ; i < YoketBIR.Length ; i++)
@@ -145,6 +162,8 @@ public class KarakterKontrolcusu : MonoBehaviour
         switch (uzerindekiBLOKcikis.tag)
         {
             case "bombaUyarici":
+            if (bombaHACK == false)
+            {
             bombaADET = bombaADET - 1 ;
             bombaSayaciTEXT = Convert.ToString(bombaADET) ;
             bombaSayaci.text = bombaSayaciTEXT;
@@ -157,7 +176,15 @@ public class KarakterKontrolcusu : MonoBehaviour
                     Dron.SetBool("dronr", true);
                 }
             UITemizle(bombaADET);
+            }
             break;
+            case "bombaUyariciHACK":
+                bombaHACK = false ;
+                UIsayilar[9].SetActive(false);
+                bombaSayaciTEXT = Convert.ToString(bombaADET) ;
+                bombaSayaci.text = bombaSayaciTEXT;
+                UITemizle(bombaADET);
+                break;
             default:
             break;
         }
