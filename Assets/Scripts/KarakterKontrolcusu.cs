@@ -112,6 +112,10 @@ public class KarakterKontrolcusu : MonoBehaviour
                     {
                         Dron.SetBool("dronr", false);
                     }
+                    else if (bombaADET != 0)
+                    {
+                        Dron.SetBool("dronr", true);
+                    }
                 UITemizle(bombaADET);
                 break;
             case "buttonZemin":
@@ -147,6 +151,10 @@ public class KarakterKontrolcusu : MonoBehaviour
                 if (bombaADET == 0)
                 {
                     Dron.SetBool("dronr", false);
+                }
+                else if (bombaADET != 0)
+                {
+                    Dron.SetBool("dronr", true);
                 }
             UITemizle(bombaADET);
             break;
