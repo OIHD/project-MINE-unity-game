@@ -19,7 +19,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     public Text bombaSayaci ;
 
     public string bombaSayaciTEXT ;
-    public GameObject[] YoketBIR,YoketIKI,YoketUC,UIsayilar;
+    public GameObject[] YoketBIR,YoketIKI,YoketUC,UIsayilar,YOKEDILEN;
     public SceneManager SonrakiSeviye;
 
     public Transform karakterKONUM,gidilecekNokta;
@@ -50,6 +50,14 @@ public class KarakterKontrolcusu : MonoBehaviour
             yield return new WaitForSeconds(MetinYAZMAHIZI);
         }
                         KarakterYasiyor = true ;
+                        for (var i = 0; i < YOKEDILEN.Length ; i++)
+                        {
+                            if (YOKEDILEN[i] != null)
+                            {
+                                OgreticiRENDER[i].enabled = false;
+                            }
+                        }
+
     }
 
     public void DokunmaALGILA()
@@ -89,7 +97,6 @@ public class KarakterKontrolcusu : MonoBehaviour
     {
         OgreticiRENDER[0].enabled = false;
         OgreticiRENDER[1].enabled = false;
-        OgreticiRENDER[2].enabled = false;
         Metin.text = string.Empty;
         bombaADET = 0 ;
         Xyaz = 0 ;
@@ -176,7 +183,6 @@ public class KarakterKontrolcusu : MonoBehaviour
                 KarakterYasiyor = false ;
                 OgreticiRENDER[0].enabled = true;
                 OgreticiRENDER[1].enabled = true;
-                OgreticiRENDER[2].enabled = true;
                 DiyalogBASLAT();
                 break;
             case "ogreticireset":

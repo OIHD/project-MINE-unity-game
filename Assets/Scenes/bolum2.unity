@@ -1150,6 +1150,9 @@ MonoBehaviour:
   - {fileID: 1062659101}
   - {fileID: 1062659101}
   - {fileID: 2090999292}
+  YOKEDILEN:
+  - {fileID: 1952938738}
+  - {fileID: 991094204}
   karakterKONUM: {fileID: 0}
   gidilecekNokta: {fileID: 1000425455}
   yurumeSES: {fileID: 1383793559}
@@ -1159,7 +1162,6 @@ MonoBehaviour:
   - MY ALARM WARNING ME. THERE IS A BOMB NEARBY. DON'T PRESS IT.
   OgreticiRENDER:
   - {fileID: 1952938744}
-  - {fileID: 991094205}
   - {fileID: 991094205}
 --- !u!212 &313895478
 SpriteRenderer:
