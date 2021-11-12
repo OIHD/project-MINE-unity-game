@@ -31,6 +31,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     public AudioSource yurumeSES;
     public AudioSource olmeSES;
     //public AudioSource KazanmaSES;
+    public int bombaADET;
 
 
     public void KONSOLAYAZDIR(String BurayaMetinGelecek = "METIN GIRINIZ."){Debug.Log(BurayaMetinGelecek);}
@@ -75,6 +76,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     }
     void Start()
     {
+        bombaADET = 0 ;
         Xyaz = 0 ;
         Yyaz = 0 ;
         KarakterRender = gameObject.GetComponent<SpriteRenderer>();
@@ -103,22 +105,14 @@ public class KarakterKontrolcusu : MonoBehaviour
                     KarakterYasiyor = false ;
                 break;
             case "bombaUyarici":
-                    bombaSayaciTEXT = "1";
-                    bombaSayaci.text = bombaSayaciTEXT;
-                    Dron.SetBool("dronr", true);
-                    UITemizle(1);
-                break;
-            case "bombaUyarici2":
-                    bombaSayaciTEXT = "2";
-                    bombaSayaci.text = bombaSayaciTEXT;
-                    Dron.SetBool("dronr", true);
-                    UITemizle(2);
-                break;
-            case "bombaUyarici3":
-                    bombaSayaciTEXT = "3";
-                    bombaSayaci.text = bombaSayaciTEXT;
-                    Dron.SetBool("dronr", true);
-                    UITemizle(3);
+                bombaADET = bombaADET + 1 ;
+                bombaSayaciTEXT = Convert.ToString(bombaADET) ;
+                bombaSayaci.text = bombaSayaciTEXT;
+                    if (bombaADET == 0)
+                    {
+                        Dron.SetBool("dronr", false);
+                    }
+                UITemizle(bombaADET);
                 break;
             case "buttonZemin":
             for (var i = 0 ; i < YoketBIR.Length ; i++)
@@ -139,19 +133,27 @@ public class KarakterKontrolcusu : MonoBehaviour
             }
                 break;
             default:
-            bombaSayaciTEXT = "0";
-            bombaSayaci.text = bombaSayaciTEXT;
-            Dron.SetBool("dronr", false);
-            UITemizle(0);
                 break;
         }  
     }
     public void OnTriggerExit2D(Collider2D uzerindekiBLOKcikis) //2D collider bulunan için 
     { 
-        bombaSayaciTEXT = "0";
-        bombaSayaci.text = bombaSayaciTEXT;
-        Dron.SetBool("dronr", false);
-        UITemizle(0);
+        switch (uzerindekiBLOKcikis.tag)
+        {
+            case "bombaUyarici":
+            bombaADET = bombaADET - 1 ;
+            bombaSayaciTEXT = Convert.ToString(bombaADET) ;
+            bombaSayaci.text = bombaSayaciTEXT;
+                if (bombaADET == 0)
+                {
+                    Dron.SetBool("dronr", false);
+                }
+            UITemizle(bombaADET);
+            break;
+            default:
+            break;
+        }
+
     }
 
  public void KarakterYolCiz ()
