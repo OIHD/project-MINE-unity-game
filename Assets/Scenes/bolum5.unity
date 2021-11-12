@@ -6604,12 +6604,12 @@ GameObject:
   - component: {fileID: 2127005574}
   - component: {fileID: 2127005573}
   m_Layer: 0
-  m_Name: Square
+  m_Name: benisilme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2127005573
 SpriteRenderer:
   m_ObjectHideFlags: 0

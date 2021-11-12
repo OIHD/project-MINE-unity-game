@@ -7,39 +7,25 @@ using TMPro ;
 
 public class KarakterKontrolcusu : MonoBehaviour
 {
+    public int buraKacinciSeviye , MetinINDEX,Xyaz,Yyaz,bombaADET,bombaHACKoncesi;
     private float yurumeHizi = 4f ;
-    public Transform gidilecekNokta;
-    public LayerMask NeBeniDurduracak;
-    public LayerMask NeBeniGebertecek;
-    public Animator Karakter;   
-    public Animator Dron;
-    private bool deaktif = false ;
+    public float MetinYAZMAHIZI;
+    public LayerMask NeBeniDurduracak,NeBeniGebertecek;
+    public Animator Karakter,Dron;
+    private bool deaktif = false;
     private SpriteRenderer KarakterRender ;
-    private bool KarakterYasiyor ;
-    private Scene Degiseceklevel ;
+    public bool KarakterYasiyor ,bombaHACK;
+    public Scene Degiseceklevel ;
     public Text bombaSayaci ;
 
     public string bombaSayaciTEXT ;
-    public GameObject[] YoketBIR;
-    public GameObject[] YoketIKI;
-    public GameObject[] YoketUC;
-    public GameObject[] UIsayilar;
+    public GameObject[] YoketBIR,YoketIKI,YoketUC,UIsayilar;
     public SceneManager SonrakiSeviye;
-    public int buraKacinciSeviye;
-    public Transform karakterKONUM;
-    public int Xyaz;
-    public int Yyaz;
-    public AudioSource yurumeSES;
-    public AudioSource olmeSES;
-    //public AudioSource KazanmaSES;
-    public int bombaADET;
-    public bool bombaHACK;
-    public int bombaHACKoncesi;
-    //
+
+    public Transform karakterKONUM,gidilecekNokta;
+    public AudioSource yurumeSES,olmeSES;
     public TextMeshProUGUI Metin ;
     public string[] satirlar ;
-    public float MetinYAZMAHIZI;
-    public int MetinINDEX;
     public SpriteRenderer[] OgreticiRENDER;
 
     public void KONSOLAYAZDIR(String BurayaMetinGelecek = "METIN GIRINIZ."){Debug.Log(BurayaMetinGelecek);}

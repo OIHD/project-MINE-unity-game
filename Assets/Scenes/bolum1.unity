@@ -1873,7 +1873,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 43be123efa589ee408dc4306d3918e43, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.8
+  m_Volume: 1
   m_Pitch: 0.8
   Loop: 0
   Mute: 0
@@ -2003,7 +2003,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7e6c36b13f9a64dbea659b93a1c6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gidilecekNokta: {fileID: 887959333}
+  buraKacinciSeviye: 1
+  MetinINDEX: 0
+  Xyaz: 0
+  Yyaz: 0
+  bombaADET: 0
+  bombaHACKoncesi: 0
+  MetinYAZMAHIZI: 0
   NeBeniDurduracak:
     serializedVersion: 2
     m_Bits: 64
@@ -2012,6 +2018,10 @@ MonoBehaviour:
     m_Bits: 128
   Karakter: {fileID: 685898533}
   Dron: {fileID: 2079496971}
+  KarakterYasiyor: 0
+  bombaHACK: 0
+  Degiseceklevel:
+    m_Handle: 0
   bombaSayaci: {fileID: 1160123332}
   bombaSayaciTEXT: 
   YoketBIR: []
@@ -2028,19 +2038,12 @@ MonoBehaviour:
   - {fileID: 1524848953}
   - {fileID: 1524848953}
   - {fileID: 866468102}
-  buraKacinciSeviye: 1
   karakterKONUM: {fileID: 2079496972}
-  Xyaz: 0
-  Yyaz: 0
+  gidilecekNokta: {fileID: 887959333}
   yurumeSES: {fileID: 604279087}
   olmeSES: {fileID: 461941482}
-  bombaADET: 0
-  bombaHACK: 0
-  bombaHACKoncesi: 0
   Metin: {fileID: 1194624242}
   satirlar: []
-  MetinYAZMAHIZI: 0
-  MetinINDEX: 0
   OgreticiRENDER:
   - {fileID: 1341243286}
   - {fileID: 1341243286}
@@ -2663,7 +2666,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d992f2e2ac057154f8a679412f8385f6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.03
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3151,12 +3154,12 @@ GameObject:
   - component: {fileID: 1341243287}
   - component: {fileID: 1341243286}
   m_Layer: 0
-  m_Name: Square
+  m_Name: benisilme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1341243286
 SpriteRenderer:
   m_ObjectHideFlags: 0
