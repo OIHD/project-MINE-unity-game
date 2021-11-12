@@ -164,7 +164,10 @@ public class KarakterKontrolcusu : MonoBehaviour
             case "bombaUyarici":
             if (bombaHACK == false)
             {
-            bombaADET = bombaADET - 1 ;
+                if (bombaADET != 0)
+                {
+                bombaADET = bombaADET - 1 ;
+                }
             bombaSayaciTEXT = Convert.ToString(bombaADET) ;
             bombaSayaci.text = bombaSayaciTEXT;
                 if (bombaADET == 0)
