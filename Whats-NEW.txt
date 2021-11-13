@@ -61,3 +61,9 @@ project M.A.Y.I.N. V1.2.9
 project M.A.Y.I.N. V1.3.0
 + A newly designed experimental level has been added to the game
 + Different alternative of the newly added level has been added (it switches to alternative when you die)
+
+project M.A.Y.I.N. V1.3.1
++ Displaced bombs removed in new level
++ New Level difficulty lowered
++ Skull icons completely removed
++ Added Outline to posts

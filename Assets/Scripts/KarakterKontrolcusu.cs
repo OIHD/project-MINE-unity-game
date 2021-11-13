@@ -224,6 +224,14 @@ public class KarakterKontrolcusu : MonoBehaviour
                 bombaSayaciTEXT = Convert.ToString(bombaADET) ;
                 bombaSayaci.text = bombaSayaciTEXT;
                 UITemizle(bombaADET);
+                if (bombaADET == 0)
+                {
+                    Dron.SetBool("dronr", false);
+                }
+                else if (bombaADET != 0)
+                {
+                    Dron.SetBool("dronr", true);
+                }
                 break;
             default:
             break;
