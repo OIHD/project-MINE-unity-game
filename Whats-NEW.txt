@@ -1,0 +1,54 @@
+project M.A.Y.I.N. V1.0.8
++ Level 3 Changed
+
+project M.A.Y.I.N. V1.0.9
++ Level 3 Controller bug fixed
++ Added background walking and dying sounds
+
+project M.A.Y.I.N. V1.1.1
++ all logical errors in the experimental level that I designed new (old patch part3) have been fixed
++ the newly designed level 2 tutorial section has been added to the game
++ Fixed the bug where the Main Music crashed the game
++ Changed background walking and dying sounds
++ Movements accelerated
++ The old Chapter 5 has been temporarily removed from the game
+
+project M.A.Y.I.N. V1.1.2
++ Skulls adapted to the number of mines
+
+project M.A.Y.I.N. V1.1.3
++ The drone now gives colored feedback when a mine enters its field of view
+
+project M.A.Y.I.N. V1.1.4
++ Fixed a minor bug in drone animation
+
+project M.A.Y.I.N. V1.1.5
++ Game window Scaled for all devices
++ Added home screen
+
+project M.A.Y.I.N. V1.1.7
++ Levels optimized
++ fixed 0 rotation issue on the move
++ mines have been modularized to facilitate the preparation of the next levels and add new mechanics
+
+project M.A.Y.I.N. V1.1.8
++ hidden mines now have a jammer effect
+
+project M.A.Y.I.N. V1.2.1
++ hidden mines reinstated for now
++ jammer mechanics fully stabilized. all bugs fixed
++ chapter 2 tutorial added
++ updated episode 2 stream
+
+project M.A.Y.I.N. V1.2.6
++ cleaner menus, font changed
++ 2nd part tutorial bugs fixed
++ volume increased
+
+project M.A.Y.I.N. V1.2.7
++ Softened text color in tutorial
++ The bomb bug that appeared on both sides at the same time in the tutorial has been fixed
++ entries edited
+
+project M.A.Y.I.N. V1.2.8
++ mine block appearing after tutorial level subtitle automatically becomes invisible
