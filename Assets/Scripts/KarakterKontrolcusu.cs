@@ -8,6 +8,7 @@ using TMPro ;
 public class KarakterKontrolcusu : MonoBehaviour
 {
     public int buraKacinciSeviye , MetinINDEX,Xyaz,Yyaz,bombaADET,bombaHACKoncesi;
+    public int AlternatifBolumSAYISI = 1 ;
     private float yurumeHizi = 4f ;
     public float MetinYAZMAHIZI;
     public LayerMask NeBeniDurduracak,NeBeniGebertecek;
@@ -338,7 +339,9 @@ public class KarakterKontrolcusu : MonoBehaviour
             idlehareketinegec ();
             yield return new WaitForSeconds(1);
             KarakterRenderSwitch ();
-            SceneManager.LoadScene(Degiseceklevel.name);
+            int raskeleBolumNumarasi = UnityEngine.Random.Range(1,AlternatifBolumSAYISI+1);
+            string SonrakiSeviye = "bolum"+((buraKacinciSeviye).ToString())+"-"+((raskeleBolumNumarasi).ToString()) ;
+            SceneManager.LoadScene(SonrakiSeviye.ToString());
             deaktif = false;
     }
 
