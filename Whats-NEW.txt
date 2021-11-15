@@ -67,3 +67,7 @@ project M.A.Y.I.N. V1.3.1
 + New Level difficulty lowered
 + Skull icons completely removed
 + Added Outline to posts
+
+project M.A.Y.I.N. V1.3.2 - FINAL
++ Codes translated to english
++ Junk files cleared.
