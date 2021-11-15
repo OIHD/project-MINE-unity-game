@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 27849606}
   - component: {fileID: 27849605}
   m_Layer: 0
-  m_Name: UYARICI
-  m_TagString: bombaUyarici
+  m_Name: WARN
+  m_TagString: bombWARN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 44745574}
   - component: {fileID: 44745575}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 86353894}
   - component: {fileID: 86353895}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 107490181}
   - component: {fileID: 107490180}
   m_Layer: 0
-  m_Name: dron
+  m_Name: drone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,7 +428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125059224}
   - component: {fileID: 125059225}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -485,7 +485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 136081056}
   - component: {fileID: 136081057}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164303941}
   - component: {fileID: 164303942}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 197641372}
   - component: {fileID: 197641371}
   m_Layer: 0
-  m_Name: gebertme
+  m_Name: DEAD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +749,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &202132942
 GameObject:
@@ -761,7 +761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 202132943}
   - component: {fileID: 202132944}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 254010831}
   - component: {fileID: 254010830}
   m_Layer: 5
-  m_Name: sayacbomb
+  m_Name: BOMBc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -897,7 +897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290235872}
   - component: {fileID: 290235873}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 313895476}
   - component: {fileID: 313895475}
   m_Layer: 0
-  m_Name: karakter
+  m_Name: character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1103,44 +1103,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7e6c36b13f9a64dbea659b93a1c6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buraKacinciSeviye: 2
-  MetinINDEX: 0
-  Xyaz: 0
-  Yyaz: 0
-  bombaADET: 0
-  bombaHACKoncesi: 0
-  AlternatifBolumSAYISI: 1
-  MetinYAZMAHIZI: 0.02
-  NeBeniDurduracak:
-    serializedVersion: 2
-    m_Bits: 64
-  NeBeniGebertecek:
+  whichLevel: 2
+  textINDEX: 0
+  Xset: 0
+  Yset: 0
+  bombTOTAL: 0
+  bombHACKearly: 0
+  AlternativeLEVELS: 0
+  textWriteSPEED: 0.03
+  whatStopsMe:
     serializedVersion: 2
     m_Bits: 128
-  Karakter: {fileID: 313895476}
-  Dron: {fileID: 107490181}
-  KarakterYasiyor: 0
-  bombaHACK: 0
-  Degiseceklevel:
+  whatKillsMe:
+    serializedVersion: 2
+    m_Bits: 256
+  gameCharacter: {fileID: 313895476}
+  drone: {fileID: 107490181}
+  ischaracterDEAD: 0
+  bombHACK: 0
+  levelActive:
     m_Handle: 0
-  bombaSayaci: {fileID: 254010830}
-  bombaSayaciTEXT: deneme
-  YoketBIR:
+  bombCalculator: {fileID: 254010830}
+  bombCalculatorTEXT: 
+  destroyONE:
   - {fileID: 1413637201}
-  - {fileID: 1929788958}
-  - {fileID: 991094204}
-  - {fileID: 505590397}
-  - {fileID: 1684788640}
   - {fileID: 1708427808}
-  YoketIKI:
+  - {fileID: 1684788640}
   - {fileID: 1779491307}
-  - {fileID: 1306408714}
-  - {fileID: 1952938738}
-  - {fileID: 505590397}
+  - {fileID: 991094204}
+  - {fileID: 1929788958}
+  destroyTWO:
+  - {fileID: 1779491307}
   - {fileID: 1684788640}
   - {fileID: 1708427808}
-  YoketUC: []
-  UIsayilar:
+  - {fileID: 1413637201}
+  - {fileID: 1952938738}
+  - {fileID: 1306408714}
+  destroyTHREE: []
+  UInumbers:
   - {fileID: 1292935925}
   - {fileID: 1163847086}
   - {fileID: 1841318513}
@@ -1151,19 +1151,18 @@ MonoBehaviour:
   - {fileID: 1062659101}
   - {fileID: 1062659101}
   - {fileID: 2090999292}
-  YOKEDILEN:
+  destroyNEXT:
   - {fileID: 1952938738}
   - {fileID: 991094204}
-  karakterKONUM: {fileID: 0}
-  gidilecekNokta: {fileID: 1000425455}
-  yurumeSES: {fileID: 1383793559}
-  olmeSES: {fileID: 197641371}
-  Metin: {fileID: 485608631}
-  satirlar:
-  - MY ALARM WARNING ME.                                                            
-    THERE IS A BOMB NEARBY.                                                                                      
-    DON'T PRESS IT.
-  OgreticiRENDER:
+  characterTRANSFORM: {fileID: 313895479}
+  targetPoint: {fileID: 922728728}
+  walkSOUND: {fileID: 1383793559}
+  deadSOUND: {fileID: 197641371}
+  chatText: {fileID: 485608631}
+  chatLines:
+  - My alarm warning me.                                                      There
+    is a bomb nearby.                                    don't press it!
+  tutorialRENDER:
   - {fileID: 1952938744}
   - {fileID: 991094205}
 --- !u!212 &313895478
@@ -1245,7 +1244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 395269215}
   - component: {fileID: 395269216}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1302,7 +1301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477457453}
   - component: {fileID: 477457454}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1391,7 +1390,7 @@ Transform:
   m_Children:
   - {fileID: 515189113}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &480307386
 GameObject:
@@ -1534,7 +1533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Buraya haval\u0131 bir metin yazmam gerekiyor"
+  m_text: If you have any questions, you can send an e-mail to goktug.yamak@outlook.com
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f3e05b50046904240b513e1941ae6b6f, type: 2}
   m_sharedMaterial: {fileID: 2978644654365686660, guid: f3e05b50046904240b513e1941ae6b6f, type: 2}
@@ -1561,7 +1560,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.5
+  m_fontSize: 15.85
   m_fontSizeBase: 29.3
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2701,7 +2700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 535876861}
   - component: {fileID: 535876862}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2758,7 +2757,7 @@ GameObject:
   m_Component:
   - component: {fileID: 554191544}
   - component: {fileID: 554191545}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2815,7 +2814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 556529077}
   - component: {fileID: 556529078}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2872,7 +2871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 620116628}
   - component: {fileID: 620116629}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2929,7 +2928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 662787376}
   - component: {fileID: 662787377}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3099,7 +3098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710055078}
   - component: {fileID: 710055079}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3156,7 +3155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 823281039}
   - component: {fileID: 823281040}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3213,7 +3212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 844465612}
   - component: {fileID: 844465613}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3270,7 +3269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848795835}
   - component: {fileID: 848795836}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3327,7 +3326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906380057}
   - component: {fileID: 906380058}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3385,7 +3384,7 @@ GameObject:
   - component: {fileID: 915139515}
   - component: {fileID: 915139516}
   m_Layer: 0
-  m_Name: gorusalani
+  m_Name: cbg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3616,8 +3615,8 @@ GameObject:
   - component: {fileID: 978689219}
   - component: {fileID: 978689218}
   m_Layer: 0
-  m_Name: UYARICI
-  m_TagString: bombaUyarici
+  m_Name: WARN
+  m_TagString: bombWARN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3695,8 +3694,8 @@ GameObject:
   - component: {fileID: 985808828}
   - component: {fileID: 985808827}
   m_Layer: 0
-  m_Name: ogreticiexit
-  m_TagString: ogreticireset
+  m_Name: tutorialexitL
+  m_TagString: TUTORIALRESET
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3774,7 +3773,7 @@ GameObject:
   - component: {fileID: 991094206}
   - component: {fileID: 991094205}
   m_Layer: 0
-  m_Name: gorunmez (1)
+  m_Name: iconR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3876,7 +3875,7 @@ GameObject:
   - component: {fileID: 997502979}
   - component: {fileID: 997502978}
   m_Layer: 0
-  m_Name: bitiszemini
+  m_Name: WIN
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3953,7 +3952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1000425455}
   m_Layer: 0
-  m_Name: GidilecekNokta
+  m_Name: targetPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3984,7 +3983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1008417837}
   - component: {fileID: 1008417838}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4041,7 +4040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1011512905}
   - component: {fileID: 1011512906}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4180,7 +4179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1071249155}
   - component: {fileID: 1071249156}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4237,7 +4236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1115018046}
   - component: {fileID: 1115018047}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4296,8 +4295,8 @@ GameObject:
   - component: {fileID: 1145776024}
   - component: {fileID: 1145776023}
   m_Layer: 0
-  m_Name: ogreticiexit (1)
-  m_TagString: ogreticireset
+  m_Name: tutorialexitR
+  m_TagString: TUTORIALRESET
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4455,7 +4454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260482692}
   - component: {fileID: 1260482693}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4595,9 +4594,9 @@ GameObject:
   - component: {fileID: 1306408717}
   - component: {fileID: 1306408716}
   - component: {fileID: 1306408715}
-  m_Layer: 7
-  m_Name: g1
-  m_TagString: Gebertici
+  m_Layer: 8
+  m_Name: mine1
+  m_TagString: DEAD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4662,7 +4661,7 @@ Transform:
   m_Children:
   - {fileID: 27849604}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1328221474
 GameObject:
@@ -4674,7 +4673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1328221475}
   - component: {fileID: 1328221476}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4731,7 +4730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1330786898}
   - component: {fileID: 1330786899}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4871,8 +4870,8 @@ GameObject:
   - component: {fileID: 1383793560}
   - component: {fileID: 1383793559}
   m_Layer: 0
-  m_Name: dugme
-  m_TagString: Untagged
+  m_Name: WALK
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4985,7 +4984,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1398377579
 GameObject:
@@ -4997,7 +4996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1398377580}
   - component: {fileID: 1398377581}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5056,8 +5055,8 @@ GameObject:
   - component: {fileID: 1413637203}
   - component: {fileID: 1413637202}
   m_Layer: 0
-  m_Name: buttonzemin2
-  m_TagString: buttonZemin2
+  m_Name: button2
+  m_TagString: button2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5133,7 +5132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1413664726}
   - component: {fileID: 1413664727}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5190,7 +5189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1448581982}
   - component: {fileID: 1448581983}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5247,7 +5246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1473144333}
   - component: {fileID: 1473144334}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5304,7 +5303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1473936783}
   - component: {fileID: 1473936784}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5361,7 +5360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1477945610}
   - component: {fileID: 1477945611}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5418,7 +5417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1484511613}
   - component: {fileID: 1484511614}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5475,7 +5474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1505541647}
   - component: {fileID: 1505541648}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5532,7 +5531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1536110852}
   - component: {fileID: 1536110853}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5589,7 +5588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1571202406}
   m_Layer: 0
-  m_Name: Duvarlar
+  m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5660,7 +5659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1590820895}
   - component: {fileID: 1590820896}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5717,7 +5716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1592793756}
   - component: {fileID: 1592793757}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5776,8 +5775,8 @@ GameObject:
   - component: {fileID: 1684788642}
   - component: {fileID: 1684788643}
   m_Layer: 0
-  m_Name: ogretici
-  m_TagString: ogretici
+  m_Name: tutorialL
+  m_TagString: TUTORIAL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5855,8 +5854,8 @@ GameObject:
   - component: {fileID: 1708427810}
   - component: {fileID: 1708427811}
   m_Layer: 0
-  m_Name: ogretici (1)
-  m_TagString: ogretici
+  m_Name: tutorialR
+  m_TagString: TUTORIAL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5922,133 +5921,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1722933512
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1722933514}
-  - component: {fileID: 1722933513}
-  m_Layer: 0
-  m_Name: yurumesag
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1722933513
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722933512}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 27a9f9998c2f5b94394db68882f3c1ec, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1722933514
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722933512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1774462842
 GameObject:
   m_ObjectHideFlags: 0
@@ -6059,7 +5931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1774462843}
   - component: {fileID: 1774462844}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6118,8 +5990,8 @@ GameObject:
   - component: {fileID: 1779491309}
   - component: {fileID: 1779491308}
   m_Layer: 0
-  m_Name: buttonzemin
-  m_TagString: buttonZemin
+  m_Name: button
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6184,36 +6056,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1856486148}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1791367137
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1791367138}
-  m_Layer: 0
-  m_Name: debug
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1791367138
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791367137}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3164115, y: 10.91, z: 0.8535361}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1821045388
 GameObject:
@@ -6434,7 +6276,7 @@ Transform:
   - {fileID: 985808826}
   - {fileID: 1145776022}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1886654972
 GameObject:
@@ -6481,9 +6323,9 @@ GameObject:
   - component: {fileID: 1929788961}
   - component: {fileID: 1929788960}
   - component: {fileID: 1929788959}
-  m_Layer: 7
-  m_Name: g2
-  m_TagString: Gebertici
+  m_Layer: 8
+  m_Name: mine2
+  m_TagString: DEAD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6548,7 +6390,7 @@ Transform:
   m_Children:
   - {fileID: 978689217}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1952938738
 GameObject:
@@ -6562,7 +6404,7 @@ GameObject:
   - component: {fileID: 1952938743}
   - component: {fileID: 1952938744}
   m_Layer: 0
-  m_Name: gorunmez
+  m_Name: iconL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6662,7 +6504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2034030504}
   - component: {fileID: 2034030505}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6719,7 +6561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2084060819}
   - component: {fileID: 2084060820}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6878,7 +6720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2140339175}
   - component: {fileID: 2140339176}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Duvar (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

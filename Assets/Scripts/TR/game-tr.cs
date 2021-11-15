@@ -1,3 +1,16 @@
+
+/*
+
+    MERHABA , Ben OIHD ( Göktuğ )
+
+    Proje dosyamızı indirdiğin için teşekkürler. 
+    Eğer türkçe kodlar üzerinden ilerlemek istiyorsan ;
+    game.cs dosyasını silip game-tr.cs nin ismini game.cs olarak değiştir ve game.cs nin önceki olduğu konuma at . .
+
+
+*/
+
+
 using System;
 using System.Collections;
 using UnityEngine;
@@ -124,11 +137,11 @@ public class KarakterKontrolcusu : MonoBehaviour
             string SonrakiSeviye = "bolum"+((buraKacinciSeviye+1).ToString()) ;
                     SceneManager.LoadScene(SonrakiSeviye.ToString());
                 break;
-            case "Gebertici":
+            case "DEAD":
                     StartCoroutine(Ogecikme());
                     KarakterYasiyor = false ;
                 break;
-            case "bombaUyarici":
+            case "bombWARN":
             if (bombaHACK == false)
             {
                 bombaADET = bombaADET + 1 ;
@@ -153,7 +166,7 @@ public class KarakterKontrolcusu : MonoBehaviour
                 bombaADET = bombaADET + 1 ;
             }
                 break;
-            case "bombaUyariciHACK":
+            case "bombHACK":
                 bombaHACK = true ;
                 bombaHACKoncesi = bombaADET ;
                 UIsayilar[0].SetActive(false);
@@ -162,31 +175,31 @@ public class KarakterKontrolcusu : MonoBehaviour
                 UIsayilar[3].SetActive(false);
                 UIsayilar[9].SetActive(true);
                 break;
-            case "buttonZemin":
+            case "button":
             for (var i = 0 ; i < YoketBIR.Length ; i++)
             {
                     Destroy(YoketBIR[i]);
             }
                 break;
-            case "buttonZemin2":
+            case "button2":
             for (var i = 0 ; i < YoketIKI.Length ; i++)
             {
                     Destroy(YoketIKI[i]);
             }
                 break;
-            case "buttonZemin3":
+            case "button3":
             for (var i = 0 ; i < YoketUC.Length ; i++)
             {
                     Destroy(YoketUC[i]);
             }
                 break;
-            case "ogretici":
+            case "TUTORIAL":
                 KarakterYasiyor = false ;
                 OgreticiRENDER[0].enabled = true;
                 OgreticiRENDER[1].enabled = true;
                 DiyalogBASLAT();
                 break;
-            case "ogreticireset":
+            case "TUTORIALRESET":
                 Metin.text = string.Empty;
                 break;
             default:
@@ -197,7 +210,7 @@ public class KarakterKontrolcusu : MonoBehaviour
     { 
         switch (uzerindekiBLOKcikis.tag)
         {
-            case "bombaUyarici":
+            case "bombWARN":
             if (bombaHACK == false)
             {
                 bombaADET = bombaADET - 1 ;
@@ -218,7 +231,7 @@ public class KarakterKontrolcusu : MonoBehaviour
                 bombaADET = bombaADET - 1;
             }
             break;
-            case "bombaUyariciHACK":
+            case "bombHACK":
                 bombaHACK = false ;
                 UIsayilar[9].SetActive(false);
                 bombaSayaciTEXT = Convert.ToString(bombaADET) ;
@@ -295,7 +308,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         if (deaktif == false)
         {
             deaktif = true;
-            VEKTORdegistir("Horizontal","Xhareket");
+            VEKTORdegistir("Horizontal","Xsize");
             yield return new WaitForSeconds(0.25f);
             idlehareketinegec ();
             deaktif = false;
@@ -307,7 +320,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         if (deaktif == false)
         {
             deaktif = true;
-            VEKTORdegistir("Vertical","Yhareket");
+            VEKTORdegistir("Vertical","Ysize");
             yield return new WaitForSeconds(0.25f);
             idlehareketinegec ();
             deaktif = false;
@@ -319,7 +332,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         if (deaktif == false)
         {
             deaktif = true;
-            MVEKTORdegistir("Horizontal","Xhareket");
+            MVEKTORdegistir("Horizontal","Xsize");
             yield return new WaitForSeconds(0.25f);
             idlehareketinegec ();
             deaktif = false;
@@ -331,7 +344,7 @@ public class KarakterKontrolcusu : MonoBehaviour
         if (deaktif == false)
         {
             deaktif = true;
-            MVEKTORdegistir("Vertical","Yhareket");
+            MVEKTORdegistir("Vertical","Ysize");
             yield return new WaitForSeconds(0.25f);
             idlehareketinegec ();
             deaktif = false;
@@ -343,7 +356,7 @@ public class KarakterKontrolcusu : MonoBehaviour
            // KONSOLAYAZDIR("GEBERDIN")
             deaktif = true;
             olmeSES.Play();
-            Karakter.SetBool("Geberdi", true);
+            Karakter.SetBool("cdead", true);
             idlehareketinegec ();
             yield return new WaitForSeconds(1);
             KarakterRenderSwitch ();
@@ -355,8 +368,8 @@ public class KarakterKontrolcusu : MonoBehaviour
 
     public void idlehareketinegec ()
     {
-            Karakter.SetFloat("Xhareket", 0);
-            Karakter.SetFloat("Yhareket", 0);
+            Karakter.SetFloat("Xsize", 0);
+            Karakter.SetFloat("Ysize", 0);
             Xyaz = 0;
             Yyaz = 0;
     }

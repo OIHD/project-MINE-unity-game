@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AnaMenu : MonoBehaviour
+public class mainMenu : MonoBehaviour
 {
     public AudioSource baslamaSES;
     public void OyunuBaslat ()

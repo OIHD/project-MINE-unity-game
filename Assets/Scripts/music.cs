@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Muzik : MonoBehaviour
+public class music : MonoBehaviour
 {
     
     // Play Global
-    private static Muzik instance = null ;
-    public static Muzik Instance 
+    private static music instance = null ;
+    public static music Instance 
     {
         get { return instance;}
     }
