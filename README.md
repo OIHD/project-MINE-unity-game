@@ -19,7 +19,7 @@ C# , Unity game engine is used.
 
 # Prewiev
 
-![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/v1-0-7.gif)
+![](https://raw.githubusercontent.com/OIHD/project-MINE-unity-game/main/prewiev%20images/v1-3-3-FINAL.gif)
 
 >Version 1.0.x
 
