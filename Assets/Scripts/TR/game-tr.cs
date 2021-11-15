@@ -81,26 +81,38 @@ public class KarakterKontrolcusu : MonoBehaviour
             Vector3 DokunmaYERI = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if(DokunmaYERI.x >= 1 && Math.Abs(DokunmaYERI.x) > Math.Abs(DokunmaYERI.y))
             {
+                clearIDLE();
                 Xyaz = 1 ;
                 Yyaz = 0 ;
                 
             }
             else if (DokunmaYERI.x <= -1 && Math.Abs(DokunmaYERI.x) > Math.Abs(DokunmaYERI.y))
             {
+                clearIDLE();
                 Xyaz = -1 ;
                 Yyaz = 0 ;
             }
             else if (DokunmaYERI.y >= 1 && Math.Abs(DokunmaYERI.y) > Math.Abs(DokunmaYERI.x))
             {
+                clearIDLE();
                 Xyaz = 0 ;
                 Yyaz = 1 ;
             }
             else if (DokunmaYERI.y <= -1 && Math.Abs(DokunmaYERI.y) > Math.Abs(DokunmaYERI.x))
             {
+                clearIDLE();
                 Xyaz = 0 ;
                 Yyaz = -1 ;
             }
         }
+    }
+
+        public void clearIDLE ()
+    {
+        Karakter.SetBool("IdUP", false);
+        Karakter.SetBool("IdDOWN", false);
+        Karakter.SetBool("IdLEFT", false);
+        Karakter.SetBool("IdRIGHT", false);
     }
 
     public void KarakterRenderSwitch ()
@@ -368,6 +380,28 @@ public class KarakterKontrolcusu : MonoBehaviour
 
     public void idlehareketinegec ()
     {
+        switch (Karakter.GetFloat("Xsize"))
+        {
+            case 1:
+            Karakter.SetBool("IdRIGHT", true);
+        break;
+            case -1:
+            Karakter.SetBool("IdLEFT", true);
+        break;
+            default:
+            break;
+        }
+                switch (Karakter.GetFloat("Ysize"))
+        {
+            case 1:
+            Karakter.SetBool("IdUP", true);
+        break;
+            case -1:
+            Karakter.SetBool("IdDOWN", true);
+        break;
+            default:
+            break;
+        }
             Karakter.SetFloat("Xsize", 0);
             Karakter.SetFloat("Ysize", 0);
             Xyaz = 0;

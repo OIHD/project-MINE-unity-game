@@ -66,28 +66,38 @@ public class game : MonoBehaviour
             Vector3 touchPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if(touchPoint.x >= 1 && Math.Abs(touchPoint.x) > Math.Abs(touchPoint.y))
             {
+                clearIDLE();
                 Xset = 1 ;
                 Yset = 0 ;
-                
             }
             else if (touchPoint.x <= -1 && Math.Abs(touchPoint.x) > Math.Abs(touchPoint.y))
             {
+                clearIDLE();
                 Xset = -1 ;
                 Yset = 0 ;
             }
             else if (touchPoint.y >= 1 && Math.Abs(touchPoint.y) > Math.Abs(touchPoint.x))
             {
+                clearIDLE();
                 Xset = 0 ;
                 Yset = 1 ;
             }
             else if (touchPoint.y <= -1 && Math.Abs(touchPoint.y) > Math.Abs(touchPoint.x))
             {
+                clearIDLE();
                 Xset = 0 ;
                 Yset = -1 ;
             }
         }
     }
 
+    public void clearIDLE ()
+    {
+        gameCharacter.SetBool("IdUP", false);
+        gameCharacter.SetBool("IdDOWN", false);
+        gameCharacter.SetBool("IdLEFT", false);
+        gameCharacter.SetBool("IdRIGHT", false);
+    }
     public void characterRenderSwitch ()
     {
             characterRender.enabled = false ;
@@ -242,10 +252,12 @@ public void characterWalkLine ()
         {
             if ((Math.Abs(Input.GetAxisRaw("Horizontal")) == 1f ) && !Physics2D.OverlapCircle(targetPoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, whatStopsMe))
             {
+                clearIDLE();
                     StartCoroutine(Xaxis()); // X
             }
             else if ((Math.Abs(Input.GetAxisRaw("Vertical")) == 1f) && (!Physics2D.OverlapCircle(targetPoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopsMe)))
             {
+                clearIDLE();
                     StartCoroutine(Yaxis()); // Y
             }
         }
@@ -361,6 +373,28 @@ public void characterWalkLine ()
 
     public void setIdle ()
     {
+        switch (gameCharacter.GetFloat("Xsize"))
+        {
+            case 1:
+            gameCharacter.SetBool("IdRIGHT", true);
+        break;
+            case -1:
+            gameCharacter.SetBool("IdLEFT", true);
+        break;
+            default:
+            break;
+        }
+                switch (gameCharacter.GetFloat("Ysize"))
+        {
+            case 1:
+            gameCharacter.SetBool("IdUP", true);
+        break;
+            case -1:
+            gameCharacter.SetBool("IdDOWN", true);
+        break;
+            default:
+            break;
+        }
             gameCharacter.SetFloat("Xsize", 0);
             gameCharacter.SetFloat("Ysize", 0);
             Xset = 0;
