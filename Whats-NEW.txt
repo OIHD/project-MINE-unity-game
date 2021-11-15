@@ -68,6 +68,9 @@ project MINE V1.3.1
 + Skull icons completely removed
 + Added Outline to posts
 
-project MINE V1.3.2 - FINAL
+project MINE V1.3.2
 + Codes translated to english
 + Junk files cleared.
+
+project MINE V1.3.3 - FINAL
++ NEW Idle animations
