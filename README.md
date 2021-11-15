@@ -21,7 +21,7 @@ C# , Unity game engine is used.
 
 ![](https://raw.githubusercontent.com/OIHD/project-MINE-unity-game/main/prewiev%20images/v1-3-3-FINAL.gif)
 
->Version 1.0.x
+>Version 1.3.3
 
 #### Developer team
 - Göktuğ Yamak - Coding , Etc.
