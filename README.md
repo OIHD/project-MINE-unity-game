@@ -14,9 +14,8 @@ C# , Unity game engine is used.
 
 ## Features
 
-- Variables, methods etc. all Turkish. (I know it's not universal. But since I wrote my first project to learn the game engine, I chose to write it in my own language. I plan to write my future projects in English)
 - The entire project is open to access.
-- It's a demo but free and open source ^^.
+- It's a 5 level demo but free and open source ^^.
 
 # Prewiev
 
@@ -30,5 +29,3 @@ C# , Unity game engine is used.
 - Enes Bora Çoban - Pixel Art
 - Semih Çağatay - Assembles The Team
 - Kıvanç Yücel - Game Design
-- Alperen Güner - Game Design
-- Kerem Öter - Nothing , Moral Support
