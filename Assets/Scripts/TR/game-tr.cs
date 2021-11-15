@@ -6,7 +6,8 @@
     Proje dosyamızı indirdiğin için teşekkürler. 
     Eğer türkçe kodlar üzerinden ilerlemek istiyorsan ;
     game.cs dosyasını silip game-tr.cs nin ismini game.cs olarak değiştir ve game.cs nin önceki olduğu konuma at . .
-
+    
+    class ismini game2 değil game olarak değiştirin .
 
 */
 
@@ -18,7 +19,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro ; 
 
-public class KarakterKontrolcusu : MonoBehaviour
+public class game2 : MonoBehaviour
 {
     public int buraKacinciSeviye , MetinINDEX,Xyaz,Yyaz,bombaADET,bombaHACKoncesi;
     public int AlternatifBolumSAYISI = 1 ;
