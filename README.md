@@ -1,4 +1,4 @@
-# project-MAYIN-unity-game
+# project-MINE-unity-game
 A game inspired by minesweeper game.
 
 ![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/SPLASH300.png)
