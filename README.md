@@ -17,7 +17,7 @@ C# , Unity game engine is used.
 - The entire project is open to access.
 - It's a 5 level demo but free and open source ^^.
 
-# Prewiev
+# Preview
 
 ![](https://raw.githubusercontent.com/OIHD/project-MINE-unity-game/main/prewiev%20images/v1-3-3-FINAL.gif)
 
