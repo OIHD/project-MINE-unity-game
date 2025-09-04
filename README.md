@@ -1,7 +1,7 @@
 # project-MINE-unity-game
 A game inspired by minesweeper game.
 
-![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/prewiev%20images/SPLASH300.png)
+![](https://raw.githubusercontent.com/OIHD/project-MAYIN-unity-game/main/preview%20images/SPLASH300.png)
 
 ### Free UNITY project
 
@@ -19,7 +19,7 @@ C# , Unity game engine is used.
 
 # Preview
 
-![](https://raw.githubusercontent.com/OIHD/project-MINE-unity-game/main/prewiev%20images/v1-3-3-FINAL.gif)
+![](https://raw.githubusercontent.com/OIHD/project-MINE-unity-game/main/preview%20images/v1-3-3-FINAL.gif)
 
 >Version 1.3.3
 
